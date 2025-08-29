@@ -1,0 +1,100 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+body img {
+  max-width: 50px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.footer .footer-pre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+}
+.footer .footer-content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-content .content-left {
+  max-width: 500px;
+  flex: 1;
+}
+.footer .footer-content .content-right {
+  max-width: 500px;
+  flex: 1;
+}
+.footer .footer-content .content-right .footer-form {
+  display: flex;
+}
+.footer .footer-content .content-right .footer-form form {
+  flex-direction: column;
+}
+.footer .footer-content .content-right .footer-form form .name, .footer .footer-content .content-right .footer-form form .email, .footer .footer-content .content-right .footer-form form .rait, .footer .footer-content .content-right .footer-form form .button {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 10px;
+  border: 1px black solid;
+  border-radius: 3px;
+  font-style: bold;
+  outline: none;
+}
+.footer .footer-content .content-right .footer-form form .name::-moz-placeholder, .footer .footer-content .content-right .footer-form form .email::-moz-placeholder, .footer .footer-content .content-right .footer-form form .rait::-moz-placeholder, .footer .footer-content .content-right .footer-form form .button::-moz-placeholder {
+  color: #5c5c5c;
+  opacity: 0.9;
+  padding: 5px;
+}
+.footer .footer-content .content-right .footer-form form .name::placeholder, .footer .footer-content .content-right .footer-form form .email::placeholder, .footer .footer-content .content-right .footer-form form .rait::placeholder, .footer .footer-content .content-right .footer-form form .button::placeholder {
+  color: #5c5c5c;
+  opacity: 0.9;
+  padding: 5px;
+}
+.footer .footer-content .content-right .footer-form form .button {
+  background-color: #2b2b2b; /* Цвет фона */
+  color: #fff;
+}
+.footer .footer-content .content-right .footer-socs {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .footer-content .content-right .footer-socs .socs-soc a img {
+  max-width: 30px;
+}
+.footer hr {
+  width: 80%;
+  margin: 25px auto;
+}
+.footer .footer-end {
+  text-align: center;
+}
+.footer .footer-end p {
+  font-weight: 500;
+}
+
+.nav {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 60%;
+}
+.nav .nav-card {
+  padding: 20px;
+  border-radius: 4px;
+}/*# sourceMappingURL=style.css.map */
