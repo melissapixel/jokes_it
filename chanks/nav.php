@@ -1,6 +1,6 @@
 <div class="nav">
     <div class="nav-card">
-        <div class="card-text">
+        <div class="card-text" onclick="get_jock()">
             <p>
                 <?php include 'php/getJous.php'; ?>
             </p>
@@ -9,12 +9,4 @@
 </div>
 
 
-<script>
-    const text_card = document.querySelector('.card-text'); 
-    text_card.addEventListener('click', function(event) {
-
-        window.location.reload();
-    });
-</script>
-
-<script src="../controllers/get_bg__color.js"></script>
+<script src="../controllers/get_jock.js"></script>

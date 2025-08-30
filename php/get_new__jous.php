@@ -1,5 +1,5 @@
 <?php 
-    include 'src/conn.php';
+    include '../src/conn.php';
     
     $sql = "SELECT id, joke, created_at FROM jokes ORDER BY RAND() LIMIT 1";
 
@@ -17,3 +17,4 @@
         echo "Ошибка: " . htmlspecialchars($e->getMessage(), ENT_QUOTES, 'UTF-8');
     }
 ?>
+
