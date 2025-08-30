@@ -14,21 +14,10 @@ body img {
 }
 
 .header {
-  max-width: 1100px;
   display: flex;
-  margin: 10px auto;
-}
-.header .header-header {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  text-align: center;
-}
-.header .header-option {
-  margin-left: auto;
-  text-align: right;
-  justify-content: end;
+  margin: 10px 0px;
 }
 
 .footer .footer-pre {
@@ -108,4 +97,4 @@ body img {
 .nav .nav-card {
   padding: 20px;
   border-radius: 4px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style1200.css.map */
