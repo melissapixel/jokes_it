@@ -1,3 +1,4 @@
+<?php include 'src/conn.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <?php include 'src/conn.php'; ?>
     <?php include 'header.php'; ?>
 
     <?php include 'chanks/nav.php'; ?>
