@@ -1,6 +1,8 @@
 <?php
     include '../src/conn.php';
 
+    header('Content-Type: application/json; charset=utf-8');
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = htmlspecialchars($_POST['name']); // Защита от XSS
         $email = htmlspecialchars($_POST['email']); // Защита от XSS
@@ -15,12 +17,20 @@
             $stmt->bindParam(':rait', $rait);
             $stmt->execute();
 
-            header('Location: ../index.php');
+        echo json_encode(['success' => true, 'message' => 'Отправлено успешно.']);
             exit();
         } catch (PDOException $e) {
-            echo "Ошибка выполнения запроса: " . $e->getMessage();
+            http_response_code(500);
+            echo json_encode(['success' => false, 'message' => 'Ошибка выполнения запроса: ' . $e->getMessage()]);
+            exit();
         }
     } else {
-        echo "Неверный метод запроса.";
+        http_response_code(405);
+        echo json_encode(['success' => false, 'message' => 'Неверный метод запроса.']);
+        exit();
     }
+
 ?>
+
+
+<script src="controllers/insert_form.js"></script>

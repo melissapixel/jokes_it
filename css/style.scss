@@ -89,6 +89,31 @@ body {
                         color: #fff;
                     }
 
+                    // .formResponse {
+                    //     display: inline-block;
+                    //     max-width: 92%;
+                    //     padding: 10px 14px;
+                    //     margin: 8px 0;
+                    //     border-radius: 8px;
+                    //     background: #f0f4ff;
+                    //     color: #1f2d55;
+                    //     border: 1px solid #d6e0ff;
+                    //     box-shadow: 0 2px 8px rgba(30, 60, 120, 0.15);
+                    //     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+                    //     font-size: 14px;
+                    //     line-height: 1.4;
+                    //     word-break: break-word;
+                    //     transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+                    //     opacity: 1;
+                    //     transform: translateY(0);
+
+                    //     &.hide {
+                    //         opacity: 0;
+                    //         transform: translateY(-6px);
+                    //         pointer-events: none;
+                    //     }
+                    }
+
                     
                 }
             }
@@ -123,7 +148,7 @@ body {
             font-weight: 500;
         }
     }
-}
+
 
 
 .nav {

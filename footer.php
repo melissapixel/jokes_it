@@ -20,21 +20,14 @@
         
         <div class="content-right">
             <div class="footer-form">
-                <form action="php/process_form.php" method="post">
+                <form action="php/process_form.php" id="reviewForm" method="post">
                     <input type="text" name="name" class="name" placeholder="Имя">
 
                     <input type="email" class="email" name="email" placeholder="Емейл">
 
                     <textarea class="rait" name="rait" placeholder="Отзыв"></textarea>
-                        <!-- <div class="star-rating" role="radiogroup" aria-label="Рейтинг">
-                            <span class="star" data-value="1" aria-label="1 звезда" title="1 звезда">★</span>
-                            <span class="star" data-value="2" aria-label="2 звезды" title="2 звезды">★</span>
-                            <span class="star" data-value="3" aria-label="3 звезды" title="3 звезды">★</span>
-                            <span class="star" data-value="4" aria-label="4 звезды" title="4 звезды">★</span>
-                            <span class="star" data-value="5" aria-label="5 звезд" title="5 звезд">★</span>
-                        </div>
-                        <input type="hidden" name="rating" id="ratingValue" value="0" /> -->
                     <button type="submit" class="button">Отправить данные</button>
+                    <div id="formResponse" class="formResponse"></div>
                 </form>
             </div>
 
@@ -82,4 +75,4 @@
     </div>
 </div>
 
-<script src="controllers/star.js"></script>
+<script src="controllers/insert_form.js"></script>
