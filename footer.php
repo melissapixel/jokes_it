@@ -20,10 +20,12 @@
         
         <div class="content-right">
             <div class="footer-form">
-                <form action="#">
-                    <input type="text" class="name" placeholder="Имя">
-                    <input type="email" class="email" placeholder="Емейл">
-                    <textarea class="rait" placeholder="Отзыв"></textarea>
+                <form action="php/process_form.php" method="post">
+                    <input type="text" name="name" class="name" placeholder="Имя">
+
+                    <input type="email" class="email" name="email" placeholder="Емейл">
+
+                    <textarea class="rait" name="rait" placeholder="Отзыв"></textarea>
                         <!-- <div class="star-rating" role="radiogroup" aria-label="Рейтинг">
                             <span class="star" data-value="1" aria-label="1 звезда" title="1 звезда">★</span>
                             <span class="star" data-value="2" aria-label="2 звезды" title="2 звезды">★</span>

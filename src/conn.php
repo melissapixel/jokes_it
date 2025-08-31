@@ -31,6 +31,16 @@
             )
         ");
 
+        $pdo->exec("
+        CREATE TABLE IF NOT EXISTS reviews (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            name VARCHAR(255) NOT NULL,
+            email VARCHAR(255) NOT NULL,
+            rait TEXT,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+    ");
+
     } catch (PDOException $e) {
         // вывод сообщения об ошибке
         echo "Ошибка: " . htmlspecialchars($e->getMessage());
