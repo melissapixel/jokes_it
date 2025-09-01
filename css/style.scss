@@ -57,7 +57,7 @@ body {
         }
 
         .content-right {
-            max-width: 500px;
+            max-width: 400px;
             flex: 1;
 
             .footer-form {
@@ -70,7 +70,7 @@ body {
                         display: block;
                     }
                     .name, .email, .rait, .button {
-                        width: 80%;
+                        width: 100%;
                         height: 30px;
                         margin-bottom: 10px;
                         border: 1px black solid;
@@ -81,7 +81,6 @@ body {
                         &::placeholder {
                             color: #5c5c5c;
                             opacity: 0.9;
-                            padding: 5px;
                         }
 
                     }
@@ -128,23 +127,23 @@ body {
 
                     
                 }
-            }
 
-            .footer-socs {
-                width: 80%;
-                display: flex;
-                justify-content: space-around;
+                .footer-socs {
+                    display: flex;
+                    justify-content: space-around;
 
-                .socs-soc {
+                    .socs-soc {
 
-                    a {
+                        a {
 
-                        img {
-                            max-width: 30px;
+                            img {
+                                max-width: 30px;
+                            }
                         }
                     }
                 }
             }
+
         }
     }
 

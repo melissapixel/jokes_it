@@ -49,7 +49,7 @@ body img {
   flex: 1;
 }
 .footer .footer-content .content-right {
-  max-width: 500px;
+  max-width: 400px;
   flex: 1;
 }
 .footer .footer-content .content-right .footer-form {
@@ -62,7 +62,7 @@ body img {
   display: block;
 }
 .footer .footer-content .content-right .footer-form form .name, .footer .footer-content .content-right .footer-form form .email, .footer .footer-content .content-right .footer-form form .rait, .footer .footer-content .content-right .footer-form form .button {
-  width: 80%;
+  width: 100%;
   height: 30px;
   margin-bottom: 10px;
   border: 1px black solid;
@@ -73,12 +73,10 @@ body img {
 .footer .footer-content .content-right .footer-form form .name::-moz-placeholder, .footer .footer-content .content-right .footer-form form .email::-moz-placeholder, .footer .footer-content .content-right .footer-form form .rait::-moz-placeholder, .footer .footer-content .content-right .footer-form form .button::-moz-placeholder {
   color: #5c5c5c;
   opacity: 0.9;
-  padding: 5px;
 }
 .footer .footer-content .content-right .footer-form form .name::placeholder, .footer .footer-content .content-right .footer-form form .email::placeholder, .footer .footer-content .content-right .footer-form form .rait::placeholder, .footer .footer-content .content-right .footer-form form .button::placeholder {
   color: #5c5c5c;
   opacity: 0.9;
-  padding: 5px;
 }
 .footer .footer-content .content-right .footer-form form input {
   padding: 10px; /* Добавляет внутренние отступы вокруг текста поля */
@@ -92,12 +90,11 @@ body img {
   background-color: #2b2b2b; /* Цвет фона */
   color: #fff;
 }
-.footer .footer-content .footer-socs {
-  width: 80%;
+.footer .footer-content .content-right .footer-socs {
   display: flex;
   justify-content: space-around;
 }
-.footer .footer-content .footer-socs .socs-soc a img {
+.footer .footer-content .content-right .footer-socs .socs-soc a img {
   max-width: 30px;
 }
 
