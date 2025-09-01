@@ -21,11 +21,11 @@
         <div class="content-right">
             <div class="footer-form">
                 <form action="php/process_form.php" id="reviewForm" method="post">
-                    <input type="text" name="name" class="name" placeholder="Имя">
+                    <input type="text" name="name" class="name" placeholder="Имя" required>
 
-                    <input type="email" class="email" name="email" placeholder="Емейл">
+                    <input type="email" class="email" name="email" placeholder="Емейл" required>
 
-                    <textarea class="rait" name="rait" placeholder="Отзыв"></textarea>
+                    <textarea class="rait" name="rait" placeholder="Отзыв" style="height: 45px;"></textarea>
                     <button type="submit" class="button">Отправить данные</button>
                     <div id="formResponse" class="formResponse"></div>
                 </form>
